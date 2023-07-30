@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Declaring meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="description" content="Application No.1" />
+    <meta name="keywords" content="Tribute Page" />
+    <meta name="author" content="Samuel Ilie" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Tribute Page</title>
+  </head>
+  <body>
+    <div id="main">
+      <div class="first-part">
+        <div class="middle-title">
+          <h3>Julius Robert Oppenheimer</h3>
+          <p>The father of the atomic bomb</p>
+        </div>
+        <div class="about">
+          <p>The man who changed the world</p>
+          <p>
+            Julius Robert Oppenheimer was an American theoretical physicist and
+            director of the Manhattan Project's Los Alamos Laboratory during
+            World War II. He is often credited as the "father of the atomic
+            bomb"
+          </p>
+        </div>
+        <img
+          src="./images/Oppenheimer_(cropped).jpg "
+          alt="Oppenheimer, 1944"
+        />
+      </div>
+      <div id="second-part">
+        <p>Here is a higlight of the most important things from his life</p>
+        <div class="box">
+          <ul>
+            <li>
+              At 22 April 1904 was born Julius Robert Oppenheimer in New York
+              City, U.S.
+            </li>
+            <li>
+              Oppenheimer earned a bachelor's degree in chemistry from Harvard
+              University in 1925
+            </li>
+            <li>
+              Also he earned a doctorate in physics from the University of
+              Göttingen in Germany in 1927
+            </li>
+            <li>
+              After research at other institutions, he joined the physics
+              department at the University of California, Berkeley, where he
+              became a full professor in 1936
+            </li>
+            <li>
+              In 1942, Oppenheimer was recruited to work on the Manhattan
+              Project, and in 1943 was appointed director of the project's Los
+              Alamos Laboratory in New Mexico
+            </li>
+            <li>
+              On July 16, 1945, he was present at the first test of the atomic
+              bomb, Trinity
+            </li>
+            <li>
+              n August 1945, the weapons were used against Japan in the bombings
+              of Hiroshima and Nagasaki. That remains the only use of nuclear
+              weapons in an armed conflict.
+            </li>
+            <li>
+              On December 16, 2022, Jennifer Granholm, the U.S. Secretary of
+              Energy, ordered that the 1954 decision to revoke Oppenheimer's
+              security clearance be vacated.
+            </li>
+          </ul>
+        </div>
+        <div class="quote">
+          <p>Any man whose errors take ten years to correct is quite a man.</p>
+          <h3>J.Robert Oppenheimer</h3>
+        </div>
+        <div class="extra">
+          <p>
+            For more information about this topic click
+            <a href="https://en.wikipedia.org/wiki/J._Robert_Oppenheimer#"
+              >here</a
+            >
+          </p>
+        </div>
+      </div>
+      <div class="feedback">
+        <p>
+          In the attached form please express your feedback against the tribute
+          page and the informations expressed in it
+        </p>
+        <form id="usrform">
+          <div class="form-example">
+            <label for="name">Enter your name: </label>
+            <input type="text" name="name" id="name" required />
+          </div>
+          <div class="form-example">
+            <label for="email">Enter your email: </label>
+            <input type="email" name="email" id="email" required />
+          </div>
+          <div class="form-example">
+            <label for="age">Please state your age</label>
+            <input type="number" id="age" name="age" min="10" max="100" />
+          </div>
+          <fieldset>
+            <legend>Are you a student/teacher?</legend>
+
+            <div>
+              <input type="radio" id="yes" name="drone" value="yes" />
+              <label for="yes">Yes</label>
+            </div>
+
+            <div>
+              <input type="radio" id="no" name="drone" value="no" />
+              <label for="no">No</label>
+            </div>
+          </fieldset>
+          <textarea name="comment" form="usrform">
+Please state here your opinion regarding the information brought in this tribute page or any suggestions</textarea>
+          <button class="button">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
