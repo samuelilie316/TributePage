@@ -86,3 +86,6 @@ text-align: center;  }
   font-size: 15px;
   font-family: 'Courier New', Courier, monospace;
 }
+textarea ::placeholder{
+  color: black;
+}
