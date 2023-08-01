@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="./formstyle.css">
   <meta charset="UTF-8" />
   <meta name="description" content="Application No.1 Form" />
   <meta name="keywords" content="Tribute Page Form" />
@@ -9,15 +10,85 @@
   <title>Feedback Form</title>
 </head>
 <body>
-  <div class="main">
-    <div class="1box"><h3 class="title">😊 Help Us Improve</h3>
+  <div id="main">
+    <div class="firstbox">
+      <h3 class="title">😊 Help Us Improve</h3>
     <p>Please complete the following form so we can improve our customer experience 🙌</p>
   </div>
-    
+    <hr>
     <div class="box">
       <form>
+        <form id="usrform">
+          <div class="form-example">
+            <label for="name">Enter your name </label><br><br>
+            <input type="text" name="name" id="name" required placeholder="Enter your name" />
+          </div>
+          <div class="form-example">
+            <br>
+            <label for="email">Enter your email </label><br><br>
+            <input type="email" name="email" id="email" required placeholder="Enter your email"/>
+          </div>
+          <div class="form-example">
+            <br>
+            <label for="age">Please state your age</label><br><br>
+            <input type="number" id="age" name="age" min="10" max="100" placeholder="Age"/>
+          </div>
+          <br>
+            <p>In the following questions please answer with 1, 2, 3, 4 or 5 where:
+              <p>1-Very Unsatisfied
+              2-Unsatisfied
+              3-Neutral
+              4-Satisfied
+              5-Very Satisfied
+            </p> 
+            </p> 
+            <div class="third-box">
+              <div>
+                <h3>How satisified are you with the information brought here?</h3>
+                <input type="radio" id="1" name="drone" value="1" />
+                <label for="1">Very Unsatisfied</label>
+                <input type="radio" id="2" name="drone" value="2" />
+                <label for="yes">Unsatisifed</label>
+                <input type="radio" id="3" name="drone" value="3" />
+                <label for="yes">Neutral</label>
+                <input type="radio" id="4" name="drone" value="4" />
+                <label for="yes">Satisfied</label>
+                <input type="radio" id="5" name="drone" value="5" />
+                <label for="yes">Very Satisfied</label>
+              </div>
+              <div>
+                <h3>How satisfied are you with the way the page was arranged?</h3>
+                <input type="radio" id="1" name="drone" value="1" />
+                <label for="1">Very Unsatisfied</label>
+                <input type="radio" id="2" name="drone" value="2" />
+                <label for="yes">Unsatisifed</label>
+                <input type="radio" id="3" name="drone" value="3" />
+                <label for="yes">Neutral</label>
+                <input type="radio" id="4" name="drone" value="4" />
+                <label for="yes">Satisfied</label>
+                <input type="radio" id="5" name="drone" value="5" />
+                <label for="yes">Very Satisfied</label>
+              </div>
+              <div>
+                <h3>How satisied are you with our products in general?</h3>
+                <input type="radio" id="1" name="drone" value="1" />
+                <label for="1">Very Unsatisfied</label>
+                <input type="radio" id="2" name="drone" value="2" />
+                <label for="yes">Unsatisifed</label>
+                <input type="radio" id="3" name="drone" value="3" />
+                <label for="yes">Neutral</label>
+                <input type="radio" id="4" name="drone" value="4" />
+                <label for="yes">Satisfied</label>
+                <input type="radio" id="5" name="drone" value="5" />
+                <label for="yes">Very Satisfied</label>
+              </div>
+            </div><br>
+          <textarea name="comment" form="usrform" rows="10" cols="50" placeholder="Please state here your opinion regarding the information brought in this tribute page or any suggestions">
+            </textarea><br>
         
-      </form>
+          <button>Submit</button>
+        </form>
+      
     </div>
   </div>
 </body>
